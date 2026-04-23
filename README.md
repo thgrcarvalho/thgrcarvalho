@@ -6,6 +6,8 @@ Senior Java / Spring Boot engineer based in Rio de Janeiro. I work on backend sy
 
 - **[pix-payload](https://github.com/thgrcarvalho/pix-payload)** — A zero-dependency Java library for encoding and decoding Pix QR Code payloads (EMV-QRCPS-MPM). Handles the CRC16/CCITT-FALSE computation, EMV TLV structure, and BCB Pix extensions. Built because the existing options were either heavyweight or got the CRC wrong.
 
+- **[pix-key-validator](https://github.com/thgrcarvalho/pix-key-validator)** — Zero-dependency Java library for validating all five Pix key types: CPF (with check digits), CNPJ (with check digits), email (BCB 77-char limit), phone (E.164), and EVP (UUID v4). Auto-detects the type from the input format.
+
 - **[spring-boot-starter-idempotency](https://github.com/thgrcarvalho/spring-boot-starter-idempotency)** — A Spring Boot starter that adds idempotency to any controller method with a single `@Idempotent` annotation. Caches responses keyed by `Idempotency-Key` header, never caches 5xx, pluggable storage backend (in-memory default, bring your own Redis).
 
 - **[spring-boot-starter-rate-limit](https://github.com/thgrcarvalho/spring-boot-starter-rate-limit)** — A Spring Boot starter that adds token-bucket rate limiting to any controller method with a single `@RateLimit` annotation. Per-IP or per-IP+path key strategies, configurable window, pluggable backend.
