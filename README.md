@@ -8,7 +8,9 @@ Senior Java / Spring Boot engineer based in Rio de Janeiro. I work on backend sy
 
 - **[spring-boot-starter-idempotency](https://github.com/thgrcarvalho/spring-boot-starter-idempotency)** — A Spring Boot starter that adds idempotency to any controller method with a single `@Idempotent` annotation. Caches responses keyed by `Idempotency-Key` header, never caches 5xx, pluggable storage backend (in-memory default, bring your own Redis).
 
-- **[pix-subscriptions](https://github.com/thgrcarvalho/pix-subscriptions)** — A recurring-billing service on top of Pix, built in Spring Boot with a hexagonal architecture. Models trainers, students, plans, subscriptions, and payments. WIP, but it's the larger canvas where I explore the domain.
+- **[spring-boot-starter-rate-limit](https://github.com/thgrcarvalho/spring-boot-starter-rate-limit)** — A Spring Boot starter that adds token-bucket rate limiting to any controller method with a single `@RateLimit` annotation. Per-IP or per-IP+path key strategies, configurable window, pluggable backend.
+
+- **[pix-subscriptions](https://github.com/thgrcarvalho/pix-subscriptions)** — A recurring-billing service on top of Pix, built in Spring Boot with a hexagonal architecture. JWT auth, daily billing scheduler, EfiBank gateway adapter, webhook receiver for payment confirmation.
 
 ### What I care about
 
