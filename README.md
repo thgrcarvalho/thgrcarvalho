@@ -18,6 +18,8 @@ Senior Java / Spring Boot engineer based in Rio de Janeiro. I work on backend sy
 
 - **[pix-subscriptions](https://github.com/thgrcarvalho/pix-subscriptions)** — A recurring-billing service on top of Pix, built in Spring Boot with a hexagonal architecture. JWT auth, daily billing scheduler, EfiBank gateway adapter, webhook receiver for payment confirmation.
 
+- **[spring-boot-starters-examples](https://github.com/thgrcarvalho/spring-boot-starters-examples)** — A runnable service showing all four starters working together: `@Idempotent` prevents duplicate payments, `@RateLimit` guards the auth endpoint, outbox publishes events atomically, webhook validator secures Pix callbacks. One command to run.
+
 ### What I care about
 
 - **Correctness over cleverness.** Payment code fails on the edges: expired tokens, concurrent retries, partial writes. I'd rather have a boring, well-tested integration than a smart one that's hard to reason about at 2am.
