@@ -8,6 +8,8 @@ Senior Java / Spring Boot engineer based in Rio de Janeiro. I work on backend sy
 
 - **[pix-key-validator](https://github.com/thgrcarvalho/pix-key-validator)** — Zero-dependency Java library for validating all five Pix key types: CPF (with check digits), CNPJ (with check digits), email (BCB 77-char limit), phone (E.164), and EVP (UUID v4). Auto-detects the type from the input format.
 
+- **[pix-webhook-validator](https://github.com/thgrcarvalho/pix-webhook-validator)** — Zero-dependency Java library for securing incoming Pix webhook requests. Combines HMAC-SHA256 signature verification, IP allowlist with full CIDR matching, and timestamp replay protection. Builder API, works with any HTTP framework.
+
 - **[spring-boot-starter-idempotency](https://github.com/thgrcarvalho/spring-boot-starter-idempotency)** — A Spring Boot starter that adds idempotency to any controller method with a single `@Idempotent` annotation. Caches responses keyed by `Idempotency-Key` header, never caches 5xx, pluggable storage backend (in-memory default, bring your own Redis).
 
 - **[spring-boot-starter-rate-limit](https://github.com/thgrcarvalho/spring-boot-starter-rate-limit)** — A Spring Boot starter that adds token-bucket rate limiting to any controller method with a single `@RateLimit` annotation. Per-IP or per-IP+path key strategies, configurable window, pluggable backend.
